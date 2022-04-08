@@ -12,7 +12,7 @@ export class HeroesComponent implements OnInit {
 
   heroes = HEROES;
   selectedHero?: Hero;
-  mask = "김영승";
+  mask = "뮤츠의역습";
 
   constructor() { }
 
@@ -21,5 +21,12 @@ export class HeroesComponent implements OnInit {
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
+  }
+
+  item: any;
+
+  king(e : string): void {
+    console.log(e,'wwww')
+    this.item = e
   }
 }
